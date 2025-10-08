@@ -6,6 +6,8 @@ The bookshelf for my reading books
 
 This repository serves as a digital bookshelf, using Git submodules to organize and manage a collection of books. Each book is maintained as a separate Git repository and included here as a submodule, demonstrating the power and flexibility of Git submodules for project organization.
 
+**🚀 New to this project? Check out the [Quick Start Guide](QUICK_START.md)!**
+
 ## Project Structure
 
 ```
@@ -16,6 +18,33 @@ bookshelf/
 │   └── ...
 ├── README.md       # This file
 └── LICENSE         # MIT License
+```
+
+## Using the Management Script
+
+This project includes a helpful management script to make working with Git submodules easier:
+
+```bash
+# List all books
+./manage-books.sh list
+
+# Check status of books
+./manage-books.sh status
+
+# Add a new book
+./manage-books.sh add <repository-url> <book-name>
+
+# Update all books
+./manage-books.sh update
+
+# Update a specific book
+./manage-books.sh update <book-name>
+
+# Remove a book
+./manage-books.sh remove <book-name>
+
+# Show help
+./manage-books.sh help
 ```
 
 ## Working with Git Submodules
@@ -104,6 +133,13 @@ This repository serves as a practical example and testing ground for Git submodu
 - Managing submodule dependencies
 - Understanding submodule workflows
 
+## Documentation
+
+- **[Quick Start Guide](QUICK_START.md)** - Get started in minutes
+- **[Submodules Guide](SUBMODULES.md)** - Comprehensive Git submodules documentation
+- **[Contributing Guidelines](CONTRIBUTING.md)** - How to add books and contribute
+- **[Management Script](manage-books.sh)** - Helper script for managing books
+
 ## Contributing
 
 To add a book to this bookshelf:
@@ -112,6 +148,8 @@ To add a book to this bookshelf:
 2. Fork this repository
 3. Add your book as a submodule in the `books/` directory
 4. Submit a pull request with a description of the book
+
+For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
