@@ -1,0 +1,3 @@
+[submodule "set-theory"]
+	path = set-theory
+	url = https://github.com/hypatia-tile/set-theory.git
