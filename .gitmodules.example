@@ -1,0 +1,21 @@
+# Example .gitmodules file
+# This file shows what the .gitmodules file looks like when books are added
+#
+# Each submodule entry contains:
+# - submodule name (in brackets)
+# - path: relative path where the submodule is located
+# - url: Git repository URL of the submodule
+#
+# Example entries:
+
+[submodule "books/intro-to-git"]
+	path = books/intro-to-git
+	url = https://github.com/example/intro-to-git.git
+
+[submodule "books/python-guide"]
+	path = books/python-guide
+	url = https://github.com/example/python-guide.git
+
+[submodule "books/clean-code"]
+	path = books/clean-code
+	url = https://github.com/example/clean-code.git
